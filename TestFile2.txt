@@ -1,18 +1,16 @@
-node{
-    stage('Build')
-    {
-        echo "Build the Project......."
+pipeline {
+    agent any
+
+    environment {
+        DISABLE_AUTH = 'true'
+        DB_ENGINE    = 'sqlite'
     }
-     stage('Deploy')
-    {
-        echo "Deploy the Project......."
-    }
-     stage('Test')
-    {
-        echo "Test the Project......."
-    }
-     stage('Release')
-    {
-        echo "Release the Project......."
+
+    stages {
+        stage('Build') {
+            steps {
+                sh 'printenv'
+            }
+        }
     }
 }
