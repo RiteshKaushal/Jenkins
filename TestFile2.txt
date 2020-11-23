@@ -1,0 +1,18 @@
+node{
+    stage('Build')
+    {
+        echo "Build the Project......."
+    }
+     stage('Deploy')
+    {
+        echo "Deploy the Project......."
+    }
+     stage('Test')
+    {
+        echo "Test the Project......."
+    }
+     stage('Release')
+    {
+        echo "Release the Project......."
+    }
+}
