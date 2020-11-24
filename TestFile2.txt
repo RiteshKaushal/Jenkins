@@ -1,14 +1,19 @@
 pipeline {
-    agent any
-
-    environment {
-        DISABLE_AUTH = 'true'       
-    }
-
+    agent any 
     stages {
-        stage('Build') {
+        stage('Build') { 
             steps {
-                sh 'printenv'
+                // 
+            }
+        }
+        stage('Test') { 
+            steps {
+                // 
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                // 
             }
         }
     }
