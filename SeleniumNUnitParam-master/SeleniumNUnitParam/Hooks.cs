@@ -34,7 +34,7 @@ namespace SeleniumNUnitParam
         private void ChooseDriverInstance(BrowerType browserType)
         {
             if (browserType == BrowerType.Chrome)
-                Driver = new ChromeDriver();
+                Driver = new ChromeDriver(@"D:\git_MyTest\JenkinsTest\SeleniumNUnitParam-master\SeleniumNUnitParam\bin\Debug\chromedriver.exe");
             else if (browserType == BrowerType.Firefox)
             {
                 FirefoxDriverService service = FirefoxDriverService.CreateDefaultService();
